@@ -1,0 +1,31 @@
+/* overlay.css */
+
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.overlay-content {
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: lightblue;
+  color: white;
+  border-radius: 5px;
+}
