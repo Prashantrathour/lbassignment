@@ -4,28 +4,31 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  border-radius: 40px;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 300px;
+ background-color: aliceblue;
+ 
+  width: 500px;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: rgb(68, 66, 66);
+  font-size: larger;
 }
 
 .overlay-content {
   text-align: center;
 }
 
-.btn {
+.close {
   position: absolute;
   top: 5px;
   right: 5px;
   padding: 10px 20px;
   border: none;
-  background-color: lightblue;
-  color: white;
-  border-radius: 5px;
+
+  color: rgb(10, 10, 10);
+cursor: pointer;
 }

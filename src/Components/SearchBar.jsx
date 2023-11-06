@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Overlay from './Overlay';
 import './searchbar.css'; // Import the searchbar.css file
-import {AiOutlineSearch} from "react-icons/ai"
+import {AiOutlineLoading3Quarters, AiOutlineSearch} from "react-icons/ai"
 const SearchBar = () => {
     const [searchValue, setSearchValue] = useState('');
     const [weatherData, setWeatherData] = useState(null);
@@ -44,16 +44,16 @@ const SearchBar = () => {
                 type="text"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                placeholder="Search..."
+                placeholder="Type to Search"
                 className="search-input"
             />
             {!loading ? (
                 <button onClick={handleSearch} className="search-button">
-                    <AiOutlineSearch fill="orange"/>
+                    <AiOutlineSearch fill="orange" fontSize={"20px"} fontWeight={"800"}/>
                 </button>
             ) : (
                 <button disabled className="search-button loading">
-                    Loading...
+                  <AiOutlineLoading3Quarters fill="orange" fontSize={"20px"} fontWeight={"800"}/>
                 </button>
             )}</div>
             {error && <p className="error-message">{error}</p>}
